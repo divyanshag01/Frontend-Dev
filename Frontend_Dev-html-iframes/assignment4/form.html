@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form (loads result in iframe)</title>
+</head>
+<body>
+  <!-- 17. form.html contains a form that targets an iframe named resultFrame -->
+  <h1>Submit Form to iframe</h1>
+  <form action="result.html" method="get" target="resultFrame">
+    <label>Enter text:<br>
+      <input type="text" name="text" required>
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <h2>Result</h2>
+  <iframe name="resultFrame" title="Result Frame" width="100%" height="150" frameborder="0"></iframe>
+</body>
+</html>

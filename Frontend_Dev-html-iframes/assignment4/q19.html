@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Form Security Demo</title>
+</head>
+<body>
+  <!-- 19. Form with autocomplete="off" and required fields -->
+  <h1>Secure Form Demo</h1>
+  <form action="#" method="post" autocomplete="off">
+    <label>Username:<br>
+      <input type="text" name="username" required>
+    </label><br><br>
+    <label>Password:<br>
+      <input type="password" name="password" required>
+    </label><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p><strong>Note:</strong> Turning off autocomplete can improve security on shared or public computers because the browser will not store or auto-fill sensitive credentials. However, it may reduce convenience for users on private devices.</p>
+</body>
+</html>

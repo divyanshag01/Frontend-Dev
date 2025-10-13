@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form with CSRF</title>
+</head>
+<body>
+  <!-- 7. Login form with hidden CSRF token -->
+  <!--
+    A CSRF (Cross-Site Request Forgery) token prevents unauthorized commands being sent from other sites.
+    The token is a secret value tied to the user's session and checked on form submission.
+  -->
+  <h1>Login</h1>
+  <form action="#" method="post">
+    <label>Username:<br>
+      <input type="text" name="username" required>
+    </label><br><br>
+    <label>Password:<br>
+      <input type="password" name="password" required>
+    </label><br><br>
+    <!-- Dummy CSRF token (hidden). In real apps this is generated server-side. -->
+    <input type="hidden" name="csrf_token" value="dummy_csrf_token_12345">
+    <button type="submit">Login</button>
+  </form>
+</body>
+</html>

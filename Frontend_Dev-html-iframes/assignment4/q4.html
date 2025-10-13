@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Frameset Layout</title>
+</head>
+<!-- 4. frameset/frames (deprecated in HTML5 but requested). Save as an .html file and open in browsers that still support framesets. -->
+<frameset rows="20%,80%">
+  <frame src="navigation.html" name="nav" title="Navigation Frame">
+  <frame src="welcome.html" name="content" title="Content Frame">
+  <noframes>
+    <body>
+      <h1>Frames not supported</h1>
+      <p>Welcome to My Website</p>
+    </body>
+  </noframes>
+</frameset>
+</html>
