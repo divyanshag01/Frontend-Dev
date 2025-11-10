@@ -1,1 +1,0 @@
-body{margin:0;font-family:sans-serif}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:16px}.box{background:#eee;padding:20px;transition:.3s}.box:hover{background:linear-gradient(135deg,#4facfe,#00f2fe);color:#fff}@media(max-width:600px){.grid{grid-template-columns:1fr}}

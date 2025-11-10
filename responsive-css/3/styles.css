@@ -1,1 +1,0 @@
-body{margin:0;font-family:sans-serif}.row{display:flex;gap:16px;padding:16px}.c{flex:1;background:#ddd;padding:30px;transition:.3s}.c:hover{background:#bbb}@media(max-width:900px){.row{flex-wrap:wrap}.c{flex:0 0 calc(50% - 16px)}}@media(max-width:600px){.c{flex:0 0 100%}}
