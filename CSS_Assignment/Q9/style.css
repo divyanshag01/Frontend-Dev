@@ -1,0 +1,7 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Georgia,serif;background:#f6f2ec;padding:2rem}
+.paper{max-width:1000px;margin:0 auto;background:#fff;padding:2rem}
+.span{column-span:all;display:block;text-align:center;font-size:2rem;margin:0 0 1rem 0}
+.columns{column-count:3;column-gap:2rem;text-align:justify}
+.float{float:left;margin-right:1rem;width:180px}
+@media (max-width:800px){.columns{column-count:1}}

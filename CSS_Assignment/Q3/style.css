@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+body{font-family:Tahoma,Arial,sans-serif;margin:0;padding:2rem;background:#fafafa}
+.team{display:flex;gap:1rem;justify-content:space-between;align-items:flex-start}
+.card{flex:1;padding:1.2rem;border:1px solid #ddd;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.06)}
+.card h3{margin:0 0 .3rem 0}
+.card h4{margin:0 0 .8rem 0;font-weight:600;color:#555}
+.card p{margin:0}
+.lead{background:#fffbe6;border:2px solid #f0c36d}
+@media (max-width:600px){.team{flex-direction:column}}
