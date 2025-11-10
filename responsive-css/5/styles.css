@@ -1,0 +1,1 @@
+body{margin:0;font-family:sans-serif}.cards{display:flex;gap:16px;padding:16px}img{width:100%;filter:grayscale(1);transition:.3s}.card{background:#fff;padding:16px;transition:.3s;animation:f 1s}@keyframes f{from{opacity:0}to{opacity:1}}.card:hover{transform:translateY(-10px)}.card:hover img{filter:none}@media(max-width:800px){.cards{flex-direction:column}}

@@ -1,1 +1,0 @@
-body{margin:0;font-family:sans-serif;background:#f5f5f5}.row{display:flex;gap:16px;padding:20px}.box{padding:20px;border-width:4px;border-style:solid;border-color:#444;border-radius:8px;background:#fff;transition:.2s}.solid{border-style:solid}.dashed{border-style:dashed}.double{border-style:double}.groove{border-style:groove}.box:hover{border-color:#1e90ff}

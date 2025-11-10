@@ -1,0 +1,1 @@
+body{margin:0;font-family:sans-serif}.row{display:flex;gap:16px;padding:16px}img{width:100%;transition:.3s}.b{filter:brightness(.6)}.b:hover{filter:none}@media(max-width:700px){.row{flex-direction:column}}
