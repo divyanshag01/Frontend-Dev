@@ -1,0 +1,8 @@
+*{box-sizing:border-box;margin:0}
+body{font-family:Arial;background:#f5f6fa;animation:fadeIn 1s ease}
+.pricing{display:flex;justify-content:center;align-items:center;gap:1rem;padding:2rem}
+.card{width:200px;height:150px;background:#fff;display:flex;align-items:center;justify-content:center;border-radius:8px;transition:.3s}
+.card:hover{transform:translateY(-10px)}
+.highlight{background:#d0e0ff;transform:scale(1.1)}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@media(max-width:750px){.pricing{flex-direction:column}}

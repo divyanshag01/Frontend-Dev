@@ -1,9 +1,0 @@
-*{box-sizing:border-box}
-body{font-family:Arial;margin:0;padding:2rem;background:#f3f6ff}
-.pricing{display:flex;gap:1rem;align-items:stretch}
-.plan{flex:1;padding:1.5rem;border-radius:10px;background:#fff;display:flex;flex-direction:column;justify-content:space-between;transition:transform .25s,background .25s;box-shadow:0 6px 18px rgba(10,10,20,0.06)}
-.plan:hover{transform:scale(1.03)}
-.popular{border:2px solid #2b6cff;box-shadow:0 8px 22px rgba(43,108,255,0.12)}
-.price{font-size:1.6rem;margin:1rem 0}
-.btn{text-decoration:none;display:inline-block;padding:.6rem 1rem;border-radius:6px;border:1px solid #2b6cff}
-@media (max-width:700px){.pricing{flex-direction:column}}

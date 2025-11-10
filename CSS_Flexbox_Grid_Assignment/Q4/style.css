@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial}
+.grid{display:grid;grid-template-columns:200px 1fr;grid-template-rows:60px 1fr;grid-template-areas:"header header" "aside main";height:100vh}
+header{grid-area:header;background:#003366;color:#fff;display:flex;align-items:center;padding:1rem}
+aside{grid-area:aside;background:#222;color:#fff;padding:1rem}
+main{grid-area:main;display:grid;grid-template-columns:repeat(2,1fr);grid-gap:1rem;padding:1rem}
+.box{background:#fff;padding:1rem;box-shadow:0 4px 10px rgba(0,0,0,0.05);transition:.3s}
+.box.big{grid-column:span 2}
+.box:hover{transform:scale(1.05);box-shadow:0 6px 16px rgba(0,0,0,0.1)}
