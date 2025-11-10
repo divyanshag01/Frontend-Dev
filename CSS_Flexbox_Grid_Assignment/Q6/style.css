@@ -1,9 +1,0 @@
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial}
-.grid{display:grid;grid-template-areas:"header header" "aside main" "footer footer";grid-template-columns:200px 1fr;min-height:100vh;gap:1rem;padding:1rem}
-header{grid-area:header;background:#003366;color:#fff;padding:1rem}
-aside{grid-area:aside;background:#f0f0f0;padding:1rem}
-main{grid-area:main;display:grid;grid-template-columns:1fr 1fr;gap:1rem}
-article{background:#fff;padding:1rem}
-footer{grid-area:footer;text-align:center;padding:1rem;background:#111;color:#fff}
-@media(max-width:800px){.grid{grid-template-areas:"header" "main" "aside" "footer";grid-template-columns:1fr}main{grid-template-columns:1fr}}

@@ -1,0 +1,6 @@
+*{box-sizing:border-box}
+body{margin:0;height:100vh;display:grid;place-items:center;background:#f6f7fb;font-family:system-ui}
+.center{display:flex;gap:24px;align-items:center;justify-content:center}
+.tooltip{position:relative;width:44px;height:44px;display:grid;place-items:center;border-radius:999px;background:#111827;color:#fff;font-weight:600}
+.tip{position:absolute;left:50%;bottom:58px;transform:translateX(-50%);opacity:0;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;background:#111827;color:#fff;padding:8px 10px;border-radius:8px;white-space:nowrap;box-shadow:0 6px 24px rgba(0,0,0,.12)}
+.tooltip:hover .tip{opacity:1;transform:translateX(-50%) translateY(-2px)}

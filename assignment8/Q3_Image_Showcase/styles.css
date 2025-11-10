@@ -1,0 +1,12 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#f8fafc;color:#0f172a}
+header{padding:16px 20px;background:#fff;border-bottom:1px solid #e2e8f0}
+.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:16px}
+.card{background:#fff;border-radius:14px;box-shadow:0 1px 2px rgba(0,0,0,.06);overflow:hidden;border:1px solid #e2e8f0}
+.imgwrap{position:relative;overflow:hidden}
+.imgwrap img{width:100%;height:200px;object-fit:cover;display:block;transform:translateZ(0);transition:transform .2s ease}
+.overlay{position:absolute;inset:0;background:rgba(0,0,0,.0);transition:background .2s ease}
+.card:hover .imgwrap img{transform:scale(1.1)}
+.card:hover .overlay{background:rgba(0,0,0,.15)}
+figcaption{padding:10px 12px}
+@media (max-width:700px){.gallery{grid-template-columns:1fr}}

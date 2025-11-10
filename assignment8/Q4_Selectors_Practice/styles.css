@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui;background:#fafafa;color:#0f172a}
+header,footer{padding:14px 18px;background:#fff;border:1px solid #e5e7eb}
+main{padding:18px}
+p{line-height:1.6}
+.lead{font-weight:600}
+#special{color:#0ea5e9}
+a[title]{text-decoration:underline dotted}
+.list li{padding:6px 8px}
+.list li[data-x]{background:#eef2ff}
+.siblings span{padding:6px 8px;display:inline-block;border:1px solid #e5e7eb}
+.siblings .next+span{background:#d1fae5}
+.siblings span~span{border-style:dashed}
+section > h2{margin-top:0}
+section h2{font-size:20px}

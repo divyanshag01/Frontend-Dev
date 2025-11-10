@@ -1,0 +1,5 @@
+body{margin:0;font-family:system-ui;background:#f8fafc;color:#0f172a}
+.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;padding:16px}
+.box{width:300px;padding:20px;border:8px solid #111827;border-radius:12px}
+.a{box-sizing:content-box;background:#fee2e2}
+.b{box-sizing:border-box;background:#dcfce7}

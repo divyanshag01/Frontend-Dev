@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f1f5f9;font-family:system-ui}
+.row{display:flex;gap:16px;flex-wrap:wrap}
+.tile{padding:18px 24px;border-radius:14px;border:none;cursor:pointer;transition:transform .18s ease,box-shadow .2s ease,filter .2s ease;color:#fff}
+.tile:hover{transform:scale(1.05);filter:brightness(1.1);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.tile:active{transform:scale(.98)}
+.blue{background:#3b82f6}
+.green{background:#10b981;color:#052e2b}
+.gray{background:#64748b}
