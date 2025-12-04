@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q8 Custom Dropdown</title>
+    <style>
+      #dropdown {
+        border: 1px solid black;
+        width: 150px;
+        padding: 10px;
+        cursor: pointer;
+      }
+      #options {
+        display: none;
+        border: 1px solid black;
+        width: 150px;
+      }
+      .opt {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .opt:hover {
+        background: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q8 – Custom Dropdown</h2>
+
+    <div id="dropdown">Select</div>
+    <div id="options">
+      <div class="opt">Option 1</div>
+      <div class="opt">Option 2</div>
+      <div class="opt">Option 3</div>
+    </div>
+
+    <script>
+      const drop = document.getElementById("dropdown");
+      const opts = document.getElementById("options");
+
+      drop.onclick = () => {
+        opts.style.display = opts.style.display === "block" ? "none" : "block";
+      };
+
+      opts.onclick = (e) => {
+        if (e.target.classList.contains("opt")) {
+          drop.textContent = e.target.textContent;
+          opts.style.display = "none";
+        }
+      };
+
+      document.addEventListener(
+        "click",
+        (e) => {
+          if (!drop.contains(e.target) && !opts.contains(e.target)) {
+            opts.style.display = "none";
+          }
+        },
+        true
+      ); // capturing
+    </script>
+  </body>
+</html>

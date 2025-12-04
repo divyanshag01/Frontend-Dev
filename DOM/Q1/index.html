@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q1 Product List Manager</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      ul {
+        margin-top: 20px;
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 8px;
+        background: #f1f1f1;
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      button {
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q1 – Product List Manager</h2>
+
+    <input id="productInput" placeholder="Enter product" />
+    <button id="addBtn">Add</button>
+
+    <ul id="productList"></ul>
+
+    <script>
+      const input = document.getElementById("productInput");
+      const addBtn = document.getElementById("addBtn");
+      const list = document.getElementById("productList");
+
+      addBtn.onclick = () => {
+        if (!input.value.trim()) return;
+        const li = document.createElement("li");
+        li.innerHTML = `
+    <span class="text">${input.value}</span>
+    <div>
+      <button class="edit">Edit</button>
+      <button class="delete">Delete</button>
+    </div>`;
+        list.appendChild(li);
+        input.value = "";
+      };
+
+      list.onclick = (e) => {
+        const li = e.target.closest("li");
+
+        if (e.target.classList.contains("delete")) {
+          li.remove();
+        }
+
+        if (e.target.classList.contains("edit")) {
+          const span = li.querySelector(".text");
+          const inputBox = document.createElement("input");
+          inputBox.value = span.textContent;
+          li.replaceChild(inputBox, span);
+          inputBox.focus();
+
+          const save = () => {
+            const newSpan = document.createElement("span");
+            newSpan.className = "text";
+            newSpan.textContent = inputBox.value;
+            li.replaceChild(newSpan, inputBox);
+          };
+
+          document.addEventListener("click", function handler(ev) {
+            if (!li.contains(ev.target)) {
+              save();
+              document.removeEventListener("click", handler);
+            }
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

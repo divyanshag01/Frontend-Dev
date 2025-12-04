@@ -1,0 +1,111 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Rahul Verma",
+            "email": "rahul@example.com"
+        },
+        {
+            "id": 2,
+            "name": "Priya Singh",
+            "email": "priya@example.com"
+        },
+        {
+            "id": 3,
+            "name": "Amit Kumar",
+            "email": "amit@example.com"
+        },
+        {
+            "id": 4,
+            "name": "Sneha Patel",
+            "email": "sneha@example.com"
+        },
+        {
+            "id": 5,
+            "name": "Vikram Rao",
+            "email": "vikram@example.com"
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "userId": 1,
+            "product": "Laptop",
+            "amount": 45000
+        },
+        {
+            "id": 2,
+            "userId": 2,
+            "product": "Smartphone",
+            "amount": 25000
+        },
+        {
+            "id": 3,
+            "userId": 3,
+            "product": "Headphones",
+            "amount": 3000
+        },
+        {
+            "id": 4,
+            "userId": 1,
+            "product": "Mouse",
+            "amount": 1500
+        },
+        {
+            "id": 5,
+            "userId": 4,
+            "product": "Keyboard",
+            "amount": 4500
+        },
+        {
+            "id": 6,
+            "userId": 5,
+            "product": "Monitor",
+            "amount": 18000
+        },
+        {
+            "id": 7,
+            "userId": 2,
+            "product": "Webcam",
+            "amount": 5000
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Laptop",
+            "category": "Electronics",
+            "stock": 25
+        },
+        {
+            "id": 2,
+            "name": "Smartphone",
+            "category": "Electronics",
+            "stock": 50
+        },
+        {
+            "id": 3,
+            "name": "Headphones",
+            "category": "Audio",
+            "stock": 100
+        },
+        {
+            "id": 4,
+            "name": "Mouse",
+            "category": "Accessories",
+            "stock": 150
+        },
+        {
+            "id": 5,
+            "name": "Keyboard",
+            "category": "Accessories",
+            "stock": 80
+        },
+        {
+            "id": 6,
+            "name": "Monitor",
+            "category": "Electronics",
+            "stock": 30
+        }
+    ]
+}

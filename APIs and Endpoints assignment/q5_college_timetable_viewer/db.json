@@ -1,0 +1,100 @@
+{
+    "timetable": [
+        {
+            "id": 1,
+            "day": "Monday",
+            "subject": "Data Structures",
+            "faculty": "Dr. Rajesh Kumar",
+            "time": "9:00 AM - 10:30 AM",
+            "room": "Room 301"
+        },
+        {
+            "id": 2,
+            "day": "Monday",
+            "subject": "Database Management",
+            "faculty": "Prof. Priya Sharma",
+            "time": "11:00 AM - 12:30 PM",
+            "room": "Room 205"
+        },
+        {
+            "id": 3,
+            "day": "Monday",
+            "subject": "Web Development",
+            "faculty": "Dr. Amit Patel",
+            "time": "2:00 PM - 3:30 PM",
+            "room": "Lab 101"
+        },
+        {
+            "id": 4,
+            "day": "Tuesday",
+            "subject": "Operating Systems",
+            "faculty": "Prof. Sneha Reddy",
+            "time": "9:00 AM - 10:30 AM",
+            "room": "Room 302"
+        },
+        {
+            "id": 5,
+            "day": "Tuesday",
+            "subject": "Computer Networks",
+            "faculty": "Dr. Vikram Singh",
+            "time": "11:00 AM - 12:30 PM",
+            "room": "Room 204"
+        },
+        {
+            "id": 6,
+            "day": "Wednesday",
+            "subject": "Software Engineering",
+            "faculty": "Prof. Ananya Iyer",
+            "time": "9:00 AM - 10:30 AM",
+            "room": "Room 303"
+        },
+        {
+            "id": 7,
+            "day": "Wednesday",
+            "subject": "Machine Learning",
+            "faculty": "Dr. Karthik Menon",
+            "time": "11:00 AM - 12:30 PM",
+            "room": "Lab 102"
+        },
+        {
+            "id": 8,
+            "day": "Wednesday",
+            "subject": "Cloud Computing",
+            "faculty": "Prof. Meera Nair",
+            "time": "2:00 PM - 3:30 PM",
+            "room": "Room 206"
+        },
+        {
+            "id": 9,
+            "day": "Thursday",
+            "subject": "Artificial Intelligence",
+            "faculty": "Dr. Arjun Desai",
+            "time": "9:00 AM - 10:30 AM",
+            "room": "Room 304"
+        },
+        {
+            "id": 10,
+            "day": "Thursday",
+            "subject": "Cyber Security",
+            "faculty": "Prof. Divya Krishnan",
+            "time": "11:00 AM - 12:30 PM",
+            "room": "Lab 103"
+        },
+        {
+            "id": 11,
+            "day": "Friday",
+            "subject": "Mobile App Development",
+            "faculty": "Dr. Rahul Verma",
+            "time": "9:00 AM - 10:30 AM",
+            "room": "Lab 101"
+        },
+        {
+            "id": 12,
+            "day": "Friday",
+            "subject": "Project Work",
+            "faculty": "All Faculty",
+            "time": "11:00 AM - 1:00 PM",
+            "room": "Multiple Labs"
+        }
+    ]
+}

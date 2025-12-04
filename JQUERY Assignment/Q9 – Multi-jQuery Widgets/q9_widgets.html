@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-jQuery Widgets</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        var jq1 = jQuery.noConflict(true);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        var jq2 = jQuery.noConflict(true);
+    </script>
+</head>
+<body>
+
+<header><h1>Widgets Dashboard</h1></header>
+
+<main>
+
+    <section id="carousel">
+        <div class="slide active">Slide 1</div>
+        <div class="slide">Slide 2</div>
+        <div class="slide">Slide 3</div>
+    </section>
+
+    <button id="notifyBtn">Show Notification</button>
+
+    <button id="tooltipBtn" title="This is a tooltip">Hover Me</button>
+
+    <div id="modal" style="display:none;">
+        <div id="modalContent">
+            <p>Notification Popup</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
+
+    <div class="widget">Widget A</div>
+    <div class="widget">Widget B</div>
+    <div class="widget">Widget C</div>
+
+</main>
+
+<footer>
+    <p>© 2025 Dashboard</p>
+</footer>
+
+<script src="q9_widgets_jq1.js"></script>
+<script src="q9_widgets_jq2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q4 Theme Switcher</title>
+    <style>
+      body[data-theme="light"] {
+        background: #fff;
+        color: #000;
+      }
+      body[data-theme="dark"] {
+        background: #222;
+        color: #fff;
+      }
+      body[data-theme="blue"] {
+        background: #d0e6ff;
+        color: #003366;
+      }
+    </style>
+  </head>
+  <body data-theme="light">
+    <h2>Q4 – Theme Switcher</h2>
+
+    <button onclick="setTheme('light')">Light</button>
+    <button onclick="setTheme('dark')">Dark</button>
+    <button onclick="setTheme('blue')">Blue</button>
+
+    <script>
+      function setTheme(theme) {
+        document.body.setAttribute("data-theme", theme);
+      }
+    </script>
+  </body>
+</html>

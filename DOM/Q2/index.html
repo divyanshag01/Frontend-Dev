@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q2 Character Counter</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      #count {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q2 – Character Counter</h2>
+
+    <textarea id="box" rows="5" cols="40"></textarea>
+    <p id="count">100 characters left</p>
+    <button id="reset">Reset</button>
+
+    <script>
+      const box = document.getElementById("box");
+      const count = document.getElementById("count");
+
+      box.addEventListener("input", (e) => {
+        if (box.value.length > 100) {
+          e.preventDefault();
+          box.value = box.value.substring(0, 100);
+        }
+        const left = 100 - box.value.length;
+
+        count.textContent = `${left} characters left`;
+
+        if (left <= 0) count.style.color = "red";
+        else if (left <= 20) count.style.color = "orange";
+        else count.style.color = "black";
+      });
+
+      document.getElementById("reset").onclick = () => {
+        box.value = "";
+        count.textContent = "100 characters left";
+        count.style.color = "black";
+      };
+    </script>
+  </body>
+</html>

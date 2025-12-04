@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q5 Image Gallery</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      img {
+        width: 120px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      #modal {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+      }
+      #modal img {
+        width: 60%;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q5 – Image Gallery</h2>
+
+    <div id="gallery">
+      <img src="https://via.placeholder.com/150" />
+      <img src="https://via.placeholder.com/150" />
+      <img src="https://via.placeholder.com/150" />
+      <img src="https://via.placeholder.com/150" />
+      <img src="https://via.placeholder.com/150" />
+      <img src="https://via.placeholder.com/150" />
+    </div>
+
+    <div id="modal">
+      <div id="content">
+        <img id="big" />
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("modal");
+      const big = document.getElementById("big");
+
+      document.getElementById("gallery").onclick = (e) => {
+        if (e.target.tagName === "IMG") {
+          big.src = e.target.src;
+          modal.style.display = "flex";
+        }
+      };
+
+      modal.onclick = () => (modal.style.display = "none");
+
+      document.getElementById("content").onclick = (e) => e.stopPropagation();
+    </script>
+  </body>
+</html>

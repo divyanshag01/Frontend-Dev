@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Bluetooth Headphones",
+      "price": 2999,
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch Pro",
+      "price": 8999,
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Laptop Stand Aluminum",
+      "price": 1499,
+      "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Mechanical Keyboard RGB",
+      "price": 4599,
+      "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Wireless Mouse Gaming",
+      "price": 1999,
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "USB-C Hub Multiport",
+      "price": 2499,
+      "image": "https://images.unsplash.com/photo-1625948515291-69613efd103f?w=300&h=300&fit=crop"
+    },
+    {
+      "id": 7,
+      "name": "Portable SSD 1TB",
+      "price": 6999,
+      "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?w=300&h=300&fit=crop"
+    }
+  ]
+}

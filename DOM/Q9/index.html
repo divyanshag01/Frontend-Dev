@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q9 Form Validation</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      .error {
+        color: red;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q9 – Form Validation</h2>
+
+    <form id="myForm">
+      <p>Name:</p>
+      <input id="name" /><span id="err1" class="error"></span>
+
+      <p>Email:</p>
+      <input id="email" /><span id="err2" class="error"></span>
+
+      <p>Password:</p>
+      <input id="pass" type="password" /><span id="err3" class="error"></span>
+
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p id="success"></p>
+
+    <script>
+      const form = document.getElementById("myForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let ok = true;
+
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value;
+        const pass = document.getElementById("pass").value;
+
+        document.getElementById("err1").textContent = name ? "" : " Required";
+        document.getElementById("err2").textContent = email.includes("@")
+          ? ""
+          : " Invalid";
+        document.getElementById("err3").textContent =
+          pass.length >= 6 ? "" : " Too short";
+
+        if (!name || !email.includes("@") || pass.length < 6) ok = false;
+
+        if (ok) {
+          document.getElementById("success").textContent =
+            "Form Submitted Successfully!";
+          form.reset();
+        }
+      });
+
+      form.oninput = () => {
+        document.getElementById("err1").textContent = "";
+        document.getElementById("err2").textContent = "";
+        document.getElementById("err3").textContent = "";
+        document.getElementById("success").textContent = "";
+      };
+    </script>
+  </body>
+</html>

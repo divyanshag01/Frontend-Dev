@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q3 Multi-Step Form</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      .step {
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q3 – Multi-Step Form</h2>
+
+    <div id="step1" class="step active">
+      <p>Name:</p>
+      <input id="name" />
+      <button onclick="next1()">Next</button>
+    </div>
+
+    <div id="step2" class="step">
+      <p>Email:</p>
+      <input id="email" />
+      <button onclick="back1()">Back</button>
+      <button onclick="next2()">Next</button>
+    </div>
+
+    <div id="step3" class="step">
+      <p>Password:</p>
+      <input id="password" type="password" />
+      <button onclick="back2()">Back</button>
+      <button onclick="finish()">Finish</button>
+    </div>
+
+    <div id="summary" class="step"></div>
+
+    <script>
+      function show(id) {
+        document
+          .querySelectorAll(".step")
+          .forEach((s) => s.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+      }
+
+      function next1() {
+        if (document.getElementById("name").value.trim()) show("step2");
+      }
+
+      function back1() {
+        show("step1");
+      }
+
+      function next2() {
+        const email = document.getElementById("email").value;
+        if (email.includes("@")) show("step3");
+      }
+
+      function back2() {
+        show("step2");
+      }
+
+      function finish() {
+        const p = document.getElementById("password").value;
+        if (p.length >= 6) {
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          document.getElementById(
+            "summary"
+          ).innerHTML = `<h3>Summary</h3>Name: ${name}<br>Email: ${email}<br>Password: ${p}`;
+          show("summary");
+        }
+      }
+    </script>
+  </body>
+</html>

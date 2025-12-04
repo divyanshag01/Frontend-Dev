@@ -1,0 +1,46 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "name": "Rajesh Kumar",
+            "status": "active",
+            "department": "Engineering",
+            "role": "Senior Developer"
+        },
+        {
+            "id": 2,
+            "name": "Priya Sharma",
+            "status": "inactive",
+            "department": "Marketing",
+            "role": "Marketing Manager"
+        },
+        {
+            "id": 3,
+            "name": "Amit Patel",
+            "status": "active",
+            "department": "Sales",
+            "role": "Sales Executive"
+        },
+        {
+            "id": 4,
+            "name": "Sneha Reddy",
+            "status": "active",
+            "department": "HR",
+            "role": "HR Specialist"
+        },
+        {
+            "id": 5,
+            "name": "Vikram Singh",
+            "status": "inactive",
+            "department": "Finance",
+            "role": "Financial Analyst"
+        },
+        {
+            "id": 6,
+            "name": "Ananya Iyer",
+            "status": "active",
+            "department": "Engineering",
+            "role": "DevOps Engineer"
+        }
+    ]
+}

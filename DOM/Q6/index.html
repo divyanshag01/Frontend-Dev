@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q6 Table Filter</title>
+    <style>
+      body {
+        font-family: Arial;
+        padding: 20px;
+      }
+      table {
+        width: 300px;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid #000;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Q6 – Table Filter</h2>
+
+    <input id="search" placeholder="Search..." />
+    <p id="msg"></p>
+
+    <table>
+      <tbody id="rows">
+        <tr>
+          <td>Ashu</td>
+          <td>CSE</td>
+          <td>8.1</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>ECE</td>
+          <td>7.2</td>
+        </tr>
+        <tr>
+          <td>Meera</td>
+          <td>CSE</td>
+          <td>9.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      const search = document.getElementById("search");
+      const rows = document.querySelectorAll("#rows tr");
+      const msg = document.getElementById("msg");
+
+      search.oninput = () => {
+        let found = false;
+        const val = search.value.toLowerCase();
+
+        rows.forEach((r) => {
+          if (r.textContent.toLowerCase().includes(val)) {
+            r.style.display = "";
+            found = true;
+          } else r.style.display = "none";
+        });
+
+        msg.textContent = found ? "" : "No results found";
+      };
+    </script>
+  </body>
+</html>
